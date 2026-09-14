@@ -1122,3 +1122,85 @@ figcaption {
     gap: 36px;
   }
 }
+
+/* Custom 404 page */
+
+.error-page {
+  min-height: calc(100vh - 170px);
+  padding: 130px 0;
+}
+
+.error-page h1 {
+  max-width: 850px;
+  margin-bottom: 28px;
+}
+
+.error-page > p:not(.eyebrow) {
+  max-width: 550px;
+  margin-bottom: 40px;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+/* Leadership and service */
+
+.leadership {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 40px;
+}
+
+.leadership .section-content {
+  max-width: none;
+}
+
+.leadership-list {
+  margin-top: 55px;
+  border-top: 1px solid var(--border);
+}
+
+.leadership-list article {
+  padding: 30px 0;
+  border-bottom: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 30px;
+}
+
+.leadership-date {
+  color: var(--faint);
+  font-size: 0.78rem;
+}
+
+.leadership-list h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.leadership-list article div > p:last-child {
+  max-width: 650px;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+@media (min-width: 801px) {
+  .leadership {
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 36px;
+  }
+}
+
+@media (max-width: 800px) {
+  .leadership {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 520px) {
+  .leadership-list article {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}
