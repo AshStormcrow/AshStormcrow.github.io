@@ -448,3 +448,264 @@ footer p {
     flex-direction: column;
   }
 }
+
+/* Detailed project pages */
+
+.project-page {
+  padding-top: 70px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 90px;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
+.project-hero {
+  max-width: 990px;
+  margin-bottom: 80px;
+}
+
+.project-hero h1 {
+  max-width: 980px;
+  font-size: clamp(3.2rem, 6.7vw, 6.4rem);
+}
+
+.project-introduction {
+  max-width: 750px;
+  margin-bottom: 65px;
+  color: var(--muted);
+  font-size: 1.25rem;
+}
+
+.project-facts {
+  margin: 0;
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.project-facts div {
+  margin: 0;
+}
+
+.project-facts dt {
+  margin-bottom: 7px;
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.project-facts dd {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+figure {
+  margin: 0;
+}
+
+figure img {
+  width: 100%;
+  display: block;
+}
+
+figcaption {
+  margin-top: 12px;
+  color: var(--faint);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.project-cover {
+  margin-bottom: 120px;
+}
+
+.project-cover img {
+  width: 100%;
+  max-height: 720px;
+  object-fit: cover;
+  background: var(--surface);
+}
+
+.case-study-section {
+  padding: 110px 0;
+  border-top: 1px solid var(--border);
+}
+
+.project-overview,
+.results-section {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 40px;
+}
+
+.case-study-copy {
+  max-width: 780px;
+}
+
+.case-study-copy > p:not(.large-copy) {
+  max-width: 660px;
+  color: var(--muted);
+}
+
+.concept-heading {
+  margin-bottom: 55px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 40px;
+}
+
+.concept-heading .section-number,
+.concept-heading .eyebrow,
+.concept-heading h2 {
+  margin-bottom: 0;
+}
+
+.concept-heading .eyebrow {
+  margin-bottom: 10px;
+}
+
+.case-study-grid {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  align-items: start;
+  gap: 65px;
+}
+
+.case-study-grid figure img,
+.image-pair figure img {
+  background: var(--surface);
+  object-fit: contain;
+}
+
+.case-study-grid figure img {
+  max-height: 650px;
+}
+
+.image-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 24px;
+}
+
+.image-pair figure img {
+  height: 460px;
+}
+
+.offset-copy {
+  margin-top: 65px;
+  margin-left: 25%;
+}
+
+.project-footer-nav {
+  padding: 35px 0 100px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.project-footer-nav a:hover {
+  color: var(--accent);
+}
+
+/* Homepage project image and link */
+
+.project-image {
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 470px;
+  display: block;
+  object-fit: cover;
+  transition: transform 300ms ease;
+}
+
+.project-image:hover img {
+  transform: scale(1.015);
+}
+
+.project-title-link:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 800px) {
+  .project-page {
+    padding-top: 45px;
+  }
+
+  .back-link {
+    margin-bottom: 65px;
+  }
+
+  .project-hero {
+    margin-bottom: 55px;
+  }
+
+  .project-facts {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project-cover {
+    margin-bottom: 80px;
+  }
+
+  .case-study-section {
+    padding: 80px 0;
+  }
+
+  .project-overview,
+  .results-section,
+  .concept-heading,
+  .case-study-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .concept-heading,
+  .case-study-grid {
+    gap: 25px;
+  }
+
+  .image-pair {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .image-pair figure img {
+    height: auto;
+    max-height: 500px;
+  }
+
+  .offset-copy {
+    margin: 55px 0 0;
+  }
+
+  .project-footer-nav {
+    gap: 25px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 520px) {
+  .project-facts {
+    grid-template-columns: 1fr;
+  }
+}

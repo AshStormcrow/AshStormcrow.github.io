@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="A modular camera and sensor system designed by Ansh Dwivedi for environmental-hazard monitoring using aerial and terrestrial vehicles."
+  >
+
+  <title>Modular Sensor Suites | Ansh Dwivedi</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="site-name" href="../index.html">Ansh Dwivedi</a>
+
+    <nav aria-label="Main navigation">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <a class="back-link" href="../index.html#projects">
+      ← Back to selected projects
+    </a>
+
+    <section class="project-hero">
+      <p class="eyebrow">Research project · Clemson University SPRI</p>
+
+      <h1>Modular sensor suites for environmental monitoring</h1>
+
+      <p class="project-introduction">
+        Three interchangeable camera concepts designed for use aboard
+        unmanned aerial and terrestrial vehicles during environmental-hazard
+        monitoring and research.
+      </p>
+
+      <dl class="project-facts">
+        <div>
+          <dt>Role</dt>
+          <dd>Research intern and designer</dd>
+        </div>
+
+        <div>
+          <dt>Focus</dt>
+          <dd>Mechanical design, cameras, and embedded systems</dd>
+        </div>
+
+        <div>
+          <dt>Platforms</dt>
+          <dd>M500 development drones and LEO rovers</dd>
+        </div>
+
+        <div>
+          <dt>Tools</dt>
+          <dd>CAD, 3D printing, Raspberry Pi, and bench testing</dd>
+        </div>
+      </dl>
+    </section>
+
+    <figure class="project-cover">
+      <img
+        src="../assets/images/sensor-suite/sensor-suite-cover.jpg"
+        alt="Modular environmental camera systems developed for drone and rover platforms"
+      >
+      <figcaption>
+        The project explored several ways to provide wide camera coverage
+        without relying on a single expensive commercial sensor package.
+      </figcaption>
+    </figure>
+
+    <section class="case-study-section project-overview">
+      <p class="section-number">01</p>
+
+      <div class="case-study-copy">
+        <h2>The problem</h2>
+
+        <p class="large-copy">
+          Environmental researchers need broad visual coverage, but existing
+          integrated camera platforms can be expensive and difficult to adapt
+          across different vehicles.
+        </p>
+
+        <p>
+          My goal was to develop a lightweight and modular system that could
+          move between drones and ground rovers. Rather than committing to one
+          mechanism immediately, I developed three approaches with different
+          levels of complexity: a fixed panoramic module, a conventional
+          gimbal, and an experimental active ball joint.
+        </p>
+      </div>
+    </section>
+
+    <section class="case-study-section">
+      <div class="concept-heading">
+        <p class="section-number">02</p>
+
+        <div>
+          <p class="eyebrow">Concept one</p>
+          <h2>Static panoramic module</h2>
+        </div>
+      </div>
+
+      <div class="case-study-grid">
+        <figure>
+          <img
+            src="../assets/images/sensor-suite/static-dome-cad.png"
+            alt="CAD model of the static panoramic camera enclosure"
+          >
+          <figcaption>
+            CAD development of the fixed camera enclosure.
+          </figcaption>
+        </figure>
+
+        <div class="case-study-copy">
+          <p>
+            The simplest concept used multiple fixed cameras to provide
+            overlapping fields of view. With no moving components, the design
+            reduced mechanical complexity and created a system that was easier
+            to manufacture, repair, and operate.
+          </p>
+
+          <p>
+            This approach traded active camera positioning for immediate
+            coverage in several directions. It also provided a useful baseline
+            for comparing the added value of the moving concepts.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-study-section">
+      <div class="concept-heading">
+        <p class="section-number">03</p>
+
+        <div>
+          <p class="eyebrow">Concept two</p>
+          <h2>Two-axis gimbal</h2>
+        </div>
+      </div>
+
+      <div class="image-pair">
+        <figure>
+          <img
+            src="../assets/images/sensor-suite/gimbal-cad.png"
+            alt="CAD model of the two-axis camera gimbal"
+          >
+          <figcaption>
+            The gimbal was designed around a compact IMX219 camera.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="../assets/images/sensor-suite/gimbal-testing.jpg"
+            alt="Physical testing of the camera gimbal"
+          >
+          <figcaption>
+            Bench testing the assembled gimbal and camera system.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="case-study-copy offset-copy">
+        <p>
+          The gimbal used two small servos to aim a single camera. Compared
+          with the static module, it required more control hardware but reduced
+          the number of cameras needed and allowed an operator to inspect a
+          particular area.
+        </p>
+
+        <p>
+          Building and testing this version exposed practical issues that were
+          less visible in CAD, including cable routing, servo range, power
+          delivery, and keeping the camera stable while the mechanism moved.
+        </p>
+      </div>
+    </section>
+
+    <section class="case-study-section">
+      <div class="concept-heading">
+        <p class="section-number">04</p>
+
+        <div>
+          <p class="eyebrow">Concept three</p>
+          <h2>ABENICS active ball joint</h2>
+        </div>
+      </div>
+
+      <div class="case-study-grid">
+        <figure>
+          <img
+            src="../assets/images/sensor-suite/abenics-cad.jpg"
+            alt="CAD model of the experimental ABENICS active ball-joint camera mechanism"
+          >
+          <figcaption>
+            An experimental four-servo spherical mechanism intended to provide
+            three rotational degrees of freedom.
+          </figcaption>
+        </figure>
+
+        <div class="case-study-copy">
+          <p>
+            The most ambitious concept adapted the ABENICS spherical-gear
+            principle into a camera mount. Four servos actuated a compact ball
+            joint, allowing a single camera to point through a much broader
+            range than a conventional two-axis mechanism.
+          </p>
+
+          <p>
+            This design offered the greatest theoretical coverage, but it also
+            introduced tighter tolerances, more difficult fabrication, and a
+            substantially more complicated control problem. It served as the
+            project’s experimental option rather than the simplest deployable
+            solution.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-study-section results-section">
+      <p class="section-number">05</p>
+
+      <div class="case-study-copy">
+        <h2>Results and tradeoffs</h2>
+
+        <p class="large-copy">
+          The work reduced the estimated cost of wide-area visual coverage
+          from roughly $15,000 for a commercial integrated platform to about
+          $300 across the three prototype approaches.
+        </p>
+
+        <p>
+          The static and gimbal systems were bench-tested successfully. The
+          lower cost came with clear compromises, particularly lower image
+          resolution and shorter transmission distance than the commercial
+          reference system.
+        </p>
+
+        <p>
+          More importantly, the project showed that one universal camera mount
+          was not necessarily the best answer. A modular interface allowed the
+          vehicle and research team to choose the appropriate balance of
+          coverage, complexity, weight, and cost for each mission.
+        </p>
+      </div>
+    </section>
+
+    <nav class="project-footer-nav" aria-label="Project navigation">
+      <a href="../index.html#projects">← All projects</a>
+      <span>More case studies coming soon.</span>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Designed and built by Ansh Dwivedi.</p>
+    <p>Last updated 2026.</p>
+  </footer>
+</body>
+</html>
