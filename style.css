@@ -858,3 +858,105 @@ figcaption {
     gap: 4px;
   }
 }
+
+.project-row-link {
+  position: relative;
+  padding-right: 45px;
+}
+
+
+
+.project-row-link:hover h3,
+.project-row-link:hover .case-study-link {
+  color: var(--accent);
+}
+
+/* Skills and clearer project links */
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 40px;
+}
+
+.skills .section-content {
+  max-width: none;
+}
+
+.skills-grid {
+  margin-top: 55px;
+  border-top: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.skills-grid article {
+  min-height: 220px;
+  padding: 30px;
+  border-bottom: 1px solid var(--border);
+}
+
+.skills-grid article:nth-child(odd) {
+  padding-left: 0;
+  border-right: 1px solid var(--border);
+}
+
+.skill-category {
+  margin-bottom: 24px;
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.skills-grid h3 {
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+}
+
+.skills-grid article > p:last-child,
+.project-row-summary p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.case-study-link {
+  display: inline-block;
+  margin-top: 28px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--faint);
+  color: var(--text);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+
+.case-study-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.project-row-summary .case-study-link {
+  margin-top: 16px;
+}
+
+@media (max-width: 800px) {
+  .skills {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 520px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid article,
+  .skills-grid article:nth-child(odd) {
+    min-height: auto;
+    padding: 25px 0;
+    border-right: 0;
+  }
+}
