@@ -960,3 +960,74 @@ figcaption {
     border-right: 0;
   }
 }
+
+/* Experience details */
+
+.experience-type {
+  margin-bottom: 7px;
+  color: var(--accent);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.experience-organization {
+  margin: -2px 0 14px;
+  color: var(--faint);
+  font-size: 0.82rem;
+}
+
+.inline-project-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--faint);
+  color: var(--muted);
+  font-size: 0.76rem;
+}
+
+.inline-project-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Homepage portrait */
+
+.intro-side {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 42px;
+}
+
+.profile-photo {
+  width: 100%;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.profile-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  display: block;
+  object-fit: cover;
+  object-position: center 38%;
+  filter: saturate(0.82) contrast(1.03);
+}
+
+.intro-side .currently {
+  margin-top: auto;
+}
+
+@media (max-width: 800px) {
+  .intro-side {
+    max-width: 430px;
+    gap: 35px;
+  }
+
+  .profile-photo img {
+    aspect-ratio: 4 / 5;
+  }
+}
