@@ -1031,3 +1031,78 @@ figcaption {
     aspect-ratio: 4 / 5;
   }
 }
+
+/* Education and recognition */
+
+.recognition {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 40px;
+}
+
+.recognition .section-content {
+  max-width: none;
+}
+
+.education-list,
+.recognition-list {
+  border-top: 1px solid var(--border);
+}
+
+.education-list article {
+  padding: 28px 0;
+  border-bottom: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 30px;
+}
+
+.education-date {
+  color: var(--faint);
+  font-size: 0.78rem;
+}
+
+.education-list h3,
+.recognition-list h3 {
+  margin-bottom: 6px;
+  font-size: 1.18rem;
+}
+
+.education-list article p,
+.recognition-list article p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.recognition-list {
+  margin-top: 65px;
+}
+
+.recognition-list > .skill-category {
+  padding-top: 25px;
+}
+
+.recognition-list article {
+  padding: 22px 0;
+  border-bottom: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  align-items: baseline;
+  gap: 35px;
+}
+
+@media (max-width: 800px) {
+  .recognition {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 520px) {
+  .education-list article,
+  .recognition-list article {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}
