@@ -1106,3 +1106,19 @@ figcaption {
     gap: 6px;
   }
 }
+
+/* Tighter numbered-section gutter */
+
+@media (min-width: 801px) {
+  .about,
+  .skills,
+  .experience,
+  .recognition,
+  .contact,
+  .project-overview,
+  .results-section,
+  .concept-heading {
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 36px;
+  }
+}
