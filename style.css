@@ -709,3 +709,152 @@ figcaption {
     grid-template-columns: 1fr;
   }
 }
+
+/* FTC Excalibur case study */
+
+.ftc-cover img {
+  height: min(68vw, 720px);
+  object-fit: cover;
+  object-position: center 55%;
+}
+
+.wide-figure {
+  margin-bottom: 65px;
+}
+
+.wide-figure img {
+  max-height: 720px;
+  background: var(--surface);
+  object-fit: contain;
+}
+
+.mechanism-list {
+  border-top: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.mechanism-list article {
+  min-height: 235px;
+  padding: 30px 28px 30px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.mechanism-list article:not(:nth-child(3n + 1)) {
+  padding-left: 28px;
+  border-left: 1px solid var(--border);
+}
+
+.mechanism-number {
+  margin-bottom: 30px;
+  color: var(--faint);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.75rem;
+}
+
+.mechanism-list h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.mechanism-list article > p:last-child {
+  max-width: 290px;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.team-figure img {
+  width: 100%;
+  height: min(58vw, 650px);
+  object-fit: cover;
+  object-position: center 45%;
+}
+
+.results-list {
+  margin-top: 55px;
+  border-top: 1px solid var(--border);
+}
+
+.results-list > div {
+  padding: 25px 0;
+  border-bottom: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  align-items: baseline;
+  gap: 30px;
+}
+
+.results-list p,
+.results-list h3 {
+  margin-bottom: 0;
+}
+
+.results-list h3 {
+  font-size: 1.25rem;
+}
+
+/* Give CAD renders breathing room without altering their files */
+
+.case-study-grid img[src*="spindex-ramp-cad"],
+.image-pair img[src*="turret-cad"],
+.image-pair img[src*="robot-cad"] {
+  padding: 20px;
+  background: #242628;
+}
+
+@media (max-width: 800px) {
+  .mechanism-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mechanism-list article,
+  .mechanism-list article:not(:nth-child(3n + 1)) {
+    padding: 26px 22px 26px 0;
+    border-left: 0;
+  }
+
+  .mechanism-list article:nth-child(even) {
+    padding-left: 22px;
+    border-left: 1px solid var(--border);
+  }
+
+  .team-figure img {
+    height: min(75vw, 520px);
+  }
+
+  .results-list > div {
+    grid-template-columns: 145px 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .ftc-cover img {
+    height: 420px;
+  }
+
+  .mechanism-list {
+    grid-template-columns: 1fr;
+  }
+
+  .mechanism-list article,
+  .mechanism-list article:not(:nth-child(3n + 1)),
+  .mechanism-list article:nth-child(even) {
+    min-height: auto;
+    padding: 25px 0;
+    border-left: 0;
+  }
+
+  .mechanism-number {
+    margin-bottom: 16px;
+  }
+
+  .team-figure img {
+    height: 380px;
+  }
+
+  .results-list > div {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}

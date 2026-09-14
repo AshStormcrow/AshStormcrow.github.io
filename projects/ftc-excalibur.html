@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="The design and development of FTC Team 22972 Excalibur's DECODE competition robot, led by team captain Ansh Dwivedi."
+  >
+
+  <title>FTC Excalibur | Ansh Dwivedi</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="site-name" href="../index.html">Ansh Dwivedi</a>
+
+    <nav aria-label="Main navigation">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <a class="back-link" href="../index.html#projects">
+      ← Back to selected projects
+    </a>
+
+    <section class="project-hero">
+      <p class="eyebrow">FTC Robotics · Team 22972 Excalibur</p>
+
+      <h1>A modular competition robot built around artifact control</h1>
+
+      <p class="project-introduction">
+        As team captain, I helped lead a 15-person team through the design,
+        fabrication, programming, and competition of our robot for the FTC
+        DECODE season.
+      </p>
+
+      <dl class="project-facts">
+        <div>
+          <dt>Role</dt>
+          <dd>Team captain and mechanical designer</dd>
+        </div>
+
+        <div>
+          <dt>Team</dt>
+          <dd>FTC 22972 Excalibur</dd>
+        </div>
+
+        <div>
+          <dt>Season</dt>
+          <dd>DECODE, with prior work during INTO THE DEEP</dd>
+        </div>
+
+        <div>
+          <dt>My systems</dt>
+          <dd>Spindex, transfer, drivetrain, and turret support</dd>
+        </div>
+      </dl>
+    </section>
+
+    <figure class="project-cover ftc-cover">
+      <img
+        src="../assets/images/ftc-excalibur/excalibur-cover.jpg"
+        alt="The completed FTC Team 22972 Excalibur DECODE robot"
+      >
+      <figcaption>
+        Excalibur’s completed DECODE robot combined six major mechanical
+        systems into a compact, repairable structure.
+      </figcaption>
+    </figure>
+
+    <section class="case-study-section project-overview">
+      <p class="section-number">01</p>
+
+      <div class="case-study-copy">
+        <h2>The design problem</h2>
+
+        <p class="large-copy">
+          The robot needed to collect, identify, store, select, and score
+          artifacts while remaining fast enough to navigate a crowded field.
+        </p>
+
+        <p>
+          We divided that process into distinct mechanisms rather than forcing
+          one assembly to perform every task. This made the robot easier to
+          develop in parallel and allowed individual systems to be removed,
+          repaired, or revised without rebuilding the entire machine.
+        </p>
+
+        <p>
+          My primary mechanical responsibility was the path between collection
+          and scoring: the spindex, transfer, and the custom drivetrain beneath
+          them. I also assisted with the turret system.
+        </p>
+      </div>
+    </section>
+
+    <section class="case-study-section">
+      <div class="concept-heading">
+        <p class="section-number">02</p>
+
+        <div>
+          <p class="eyebrow">System architecture</p>
+          <h2>Six mechanisms, one continuous path</h2>
+        </div>
+      </div>
+
+      <figure class="wide-figure">
+        <img
+          src="../assets/images/ftc-excalibur/robot-cad.png"
+          alt="CAD model of Excalibur's complete DECODE robot"
+        >
+        <figcaption>
+          Full robot CAD showing the relationship between the drivetrain,
+          artifact-handling systems, and turret.
+        </figcaption>
+      </figure>
+
+      <div class="mechanism-list">
+        <article>
+          <p class="mechanism-number">01</p>
+          <h3>Intake</h3>
+          <p>
+            Collected artifacts from the field and delivered them into the
+            spindex.
+          </p>
+        </article>
+
+        <article>
+          <p class="mechanism-number">02</p>
+          <h3>Spindex</h3>
+          <p>
+            Stored the maximum of three artifacts and selected which one would
+            be sent forward.
+          </p>
+        </article>
+
+        <article>
+          <p class="mechanism-number">03</p>
+          <h3>Transfer</h3>
+          <p>
+            Carried the selected artifact from the spindex up into the rotating
+            turret.
+          </p>
+        </article>
+
+        <article>
+          <p class="mechanism-number">04</p>
+          <h3>Turret</h3>
+          <p>
+            Rotated continuously through 360 degrees and launched artifacts
+            into the field goals.
+          </p>
+        </article>
+
+        <article>
+          <p class="mechanism-number">05</p>
+          <h3>Kickstand</h3>
+          <p>
+            Angled the robot upward in the parking zone to meet the
+            requirements for a full park.
+          </p>
+        </article>
+
+        <article>
+          <p class="mechanism-number">06</p>
+          <h3>Drivetrain</h3>
+          <p>
+            Used Mecanum wheels to provide omnidirectional movement around the
+            field.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="case-study-section">
+      <div class="concept-heading">
+        <p class="section-number">03</p>
+
+        <div>
+          <p class="eyebrow">My primary design work</p>
+          <h2>The spindex and transfer</h2>
+        </div>
+      </div>
+
+      <div class="case-study-grid">
+        <figure>
+          <img
+            src="../assets/images/ftc-excalibur/spindex-ramp-cad.png"
+            alt="CAD model of the spindex and its structural ramp"
+          >
+          <figcaption>
+            The three-position spindex organized artifacts around a central
+            selector.
+          </figcaption>
+        </figure>
+
+        <div class="case-study-copy">
+          <p>
+            The spindex had to do more than store artifacts. It held the
+            maximum legal capacity of three while allowing the robot to choose
+            which artifact entered the transfer next.
+          </p>
+
+          <p>
+            I built the system around a single structural ramp. That ramp
+            supported the spindex components while also packaging the
+            drivetrain motors, complete transfer, and sensors into the same
+            central assembly.
+          </p>
+
+          <p>
+            Consolidating those functions reduced the number of separate
+            structures inside the robot, but it made spatial planning
+            especially important. Clearances for moving artifacts, belts,
+            motors, wiring, and service access all had to be considered in the
+            same area.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-study-section">
+      <div class="concept-heading">
+        <p class="section-number">04</p>
+
+        <div>
+          <p class="eyebrow">Mobility and scoring</p>
+          <h2>Custom chassis and rotating turret</h2>
+        </div>
+      </div>
+
+      <div class="image-pair">
+        <figure>
+          <img
+            src="../assets/images/ftc-excalibur/robot-cad.png"
+            alt="CAD model showing the robot's custom parallel-plate chassis"
+          >
+          <figcaption>
+            A parallel-plate construction method allowed the chassis geometry
+            to be designed around the mechanisms above it.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="../assets/images/ftc-excalibur/turret-cad.png"
+            alt="CAD model of Excalibur's rotating scoring turret"
+          >
+          <figcaption>
+            The turret rotated through 360 degrees so the robot could aim
+            without first turning the entire drivetrain.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="case-study-copy offset-copy">
+        <p>
+          I designed the drivetrain using a parallel-plate structure rather
+          than a standard rectangular kit chassis. This gave us direct control
+          over the robot’s dimensions and mounting points while retaining the
+          sideways and diagonal movement provided by Mecanum wheels.
+        </p>
+
+        <p>
+          I also assisted with the turret, which received artifacts from the
+          transfer and launched them into the goals. Independent turret
+          rotation separated aiming from driving and gave the team more
+          flexibility in how the robot approached a scoring position.
+        </p>
+      </div>
+    </section>
+
+    <section class="case-study-section">
+      <div class="concept-heading">
+        <p class="section-number">05</p>
+
+        <div>
+          <p class="eyebrow">Team leadership</p>
+          <h2>Coordinating a 15-person build</h2>
+        </div>
+      </div>
+
+      <figure class="wide-figure team-figure">
+        <img
+          src="../assets/images/ftc-excalibur/team-photo.jpg"
+          alt="The 15 members of FTC Team 22972 Excalibur"
+        >
+        <figcaption>
+          FTC Team 22972 Excalibur during the DECODE season.
+        </figcaption>
+      </figure>
+
+      <div class="case-study-copy offset-copy">
+        <p>
+          As team captain, I was responsible for more than my own CAD work. I
+          helped keep the mechanical, programming, documentation, and outreach
+          efforts moving toward the same competition deadlines.
+        </p>
+
+        <p>
+          The season built on my previous experience with Excalibur during INTO
+          THE DEEP. That continuity helped me recognize where clearer subsystem
+          ownership, modular construction, and earlier integration testing
+          could improve the team’s process.
+        </p>
+      </div>
+    </section>
+
+    <section class="case-study-section">
+      <div class="concept-heading">
+        <p class="section-number">06</p>
+
+        <div>
+          <p class="eyebrow">Outreach</p>
+          <h2>Using the team to build another</h2>
+        </div>
+      </div>
+
+      <div class="case-study-grid">
+        <figure>
+          <img
+            src="../assets/images/ftc-excalibur/robotics-camp.jpg"
+            alt="Students participating in Excalibur's middle-school robotics camp"
+          >
+          <figcaption>
+            Our middle-school camp introduced students to FTC concepts through
+            demonstrations and hands-on building.
+          </figcaption>
+        </figure>
+
+        <div class="case-study-copy">
+          <p>
+            Excalibur hosted a week-long robotics camp for middle-school
+            students. The camp introduced FTC-style design and programming
+            while raising money to support a new team through Fort Mill 4-H.
+          </p>
+
+          <p>
+            Teaching the material forced us to explain decisions that had
+            become automatic within our own team. It also extended the season’s
+            impact beyond a single robot or competition result.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-study-section results-section">
+      <p class="section-number">07</p>
+
+      <div class="case-study-copy">
+        <h2>Season results</h2>
+
+        <p class="large-copy">
+          Excalibur advanced through the Upstate Qualifier and South Carolina
+          State Championship before competing at the Carolinas Premier Event.
+        </p>
+
+        <div class="results-list">
+          <div>
+            <p class="eyebrow">Upstate Qualifier</p>
+            <h3>Inspire Award</h3>
+          </div>
+
+          <div>
+            <p class="eyebrow">State Championship</p>
+            <h3>Control Award</h3>
+          </div>
+
+          <div>
+            <p class="eyebrow">Postseason</p>
+            <h3>Carolinas Premier Event</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="project-footer-nav" aria-label="Project navigation">
+      <a href="sensor-suite.html">← Modular sensor suites</a>
+      <a href="../index.html#projects">All projects</a>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Designed and built by Ansh Dwivedi.</p>
+    <p>Last updated 2026.</p>
+  </footer>
+</body>
+</html>
