@@ -23,7 +23,16 @@
   <header class="site-header">
     <a class="site-name" href="index.html">Ansh Dwivedi</a>
 
-    <nav aria-label="Main navigation">
+    <button
+  class="menu-toggle"
+  type="button"
+  aria-expanded="false"
+  aria-controls="site-navigation"
+>
+  <span>Menu</span>
+  <span class="menu-symbol" aria-hidden="true">+</span>
+</button>
+    <nav id="site-navigation" aria-label="Main navigation">
       <a href="index.html#about">About</a>
       <a href="index.html#projects">Projects</a>
       <a href="index.html#skills">Skills</a>
@@ -465,5 +474,6 @@
     <p>Designed and built by Ansh Dwivedi.</p>
     <p>Last updated 2026.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
