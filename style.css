@@ -1204,3 +1204,147 @@ figcaption {
     gap: 6px;
   }
 }
+
+/* Earlier work archive */
+
+.archive-page {
+  padding-top: 70px;
+}
+
+.archive-hero {
+  max-width: 960px;
+  padding-bottom: 95px;
+}
+
+.archive-hero h1 {
+  max-width: 900px;
+}
+
+.archive-section {
+  padding: 100px 0;
+  border-top: 1px solid var(--border);
+}
+
+.archive-heading {
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 36px;
+  align-items: baseline;
+}
+
+.archive-heading .section-number,
+.archive-heading h2 {
+  margin-bottom: 0;
+}
+
+.archive-list {
+  margin-left: 108px;
+  border-top: 1px solid var(--border);
+}
+
+.archive-list article {
+  padding: 28px 0;
+  border-bottom: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 155px minmax(0, 1fr);
+  gap: 35px;
+}
+
+.archive-date {
+  margin-bottom: 0;
+  color: var(--faint);
+  font-size: 0.77rem;
+}
+
+.archive-list h3 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.archive-list article div > p:last-child {
+  max-width: 680px;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.archive-list .inline-project-link {
+  margin-top: 10px;
+}
+
+.archive-grid {
+  margin-left: 108px;
+  border-top: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.archive-grid article {
+  min-height: 195px;
+  padding: 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+.archive-grid article:nth-child(odd) {
+  padding-left: 0;
+  border-right: 1px solid var(--border);
+}
+
+.archive-grid .archive-date {
+  margin-bottom: 20px;
+  color: var(--accent);
+}
+
+.archive-grid h3 {
+  margin-bottom: 8px;
+  font-size: 1.12rem;
+}
+
+.archive-grid article > p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 800px) {
+  .archive-page {
+    padding-top: 45px;
+  }
+
+  .archive-hero {
+    padding-bottom: 70px;
+  }
+
+  .archive-section {
+    padding: 75px 0;
+  }
+
+  .archive-heading {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .archive-list,
+  .archive-grid {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .archive-list article {
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+
+  .archive-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .archive-grid article,
+  .archive-grid article:nth-child(odd) {
+    min-height: auto;
+    padding: 25px 0;
+    border-right: 0;
+  }
+}
