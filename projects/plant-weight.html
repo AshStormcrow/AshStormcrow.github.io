@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link
+  rel="canonical"
+  href="https://dwivedi.studio/projects/plant-weight.html"
+>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="The design and development of It Passed Inspection's very first BattleBot."
+  >
+
+  <title>PlAnt Weight | Ansh Dwivedi</title>
+  <meta name="theme-color" content="#17191b">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="site-name" href="../index.html">Ansh Dwivedi</a>
+
+    <button
+  class="menu-toggle"
+  type="button"
+  aria-expanded="false"
+  aria-controls="site-navigation"
+>
+  <span>Menu</span>
+  <span class="menu-symbol" aria-hidden="true">+</span>
+</button>
+    <nav id="site-navigation" aria-label="Main navigation">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#projects">Projects</a>
+<a href="../index.html#skills">Skills</a>
+<a href="../index.html#experience">Experience</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <a class="back-link" href="../index.html#projects">
+      ← Back to My Projects
+    </a>
+
+    <section class="project-hero">
+      <p class="eyebrow">Railside Robotics · It Passed Inspection</p>
+
+      <h1>A modular combat robot designed to take out the competition</h1>
+
+      <p class="project-introduction">
+        As a team of three, we are developing a drum-style combat robot for Railside Robotics'
+        onboarding compeition. 
+      </p>
+
+      <dl class="project-facts">
+        <div>
+          <dt>Role</dt>
+          <dd>Mechanical and Electrical Designer</dd>
+        </div>
+
+        <div>
+          <dt>Team</dt>
+          <dd>It Passed Inspection</dd>
+        </div>
+
+        <div>
+          <dt>Competition</dt>
+          <dd>Onboarding Competition</dd>
+        </div>
+
+        <div>
+          <dt>My systems</dt>
+          <dd>TBD</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!--<figure class="project-cover ftc-cover">
+      <img
+        src="../assets/images/ftc-excalibur/excalibur-cover.jpg"
+        alt="The completed FTC Team 22972 Excalibur DECODE robot"
+      >
+      <figcaption>
+        Excalibur’s completed DECODE robot combined six major mechanical
+        systems into a compact, repairable structure.
+      </figcaption>
+    </figure>
+-->
+
+    <section class="case-study-section project-overview">
+      <p class="section-number">09/15/26</p>
+
+      <div class="case-study-copy">
+        <h2>Meeting 3</h2>
+
+        <p class="large-copy">
+          Big Summary
+        </p>
+
+        <p>
+          Paragraph 1
+        </p>
+
+        <p>
+          Paragraph 2
+        </p>
+      </div>
+    </section>
+
+    <section class="case-study-section">
+      <div class="concept-heading">
+        <p class="section-number">09/10/26</p>
+
+        <div>
+          <!--<p class="eyebrow">System architecture</p>0-->
+          <h2>Deciding the base-level design</h2>
+        </div>
+      </div>
+
+      <figure class="wide-figure">
+        <img
+          src="../assets/images/plant-weight/plant-weight-sketch.jpg"
+          alt="sketch of 1st iteration of plant weight"
+        >
+        <figcaption>
+          Our very first detailed sketch showing the parts of our 
+          robot.  
+        </figcaption>
+      </figure>
+
+      <p class="project-log">
+        While I unfortunately missed this meeting, my partners were able to make a sketch of 
+        what we want our bot to look like. The internal sketch has
+        placements for all of our electronics, and also lays out where
+        the wheels will sit. The specific drum end has also been decided here, with 
+        us going for a smaller central drum with two mini-drums on the sides. 
+    </p>
+
+     <!-- <div class="mechanism-list">
+        <article>
+          <p class="mechanism-number">01</p>
+          <h3>Intake</h3>
+          <p>
+            Custom designed TPU (90A) intake wheels collected artifacts from the field 
+            and delivered them into the
+            spindex. The bottom rod was able to slightly move to ensure there was 
+            <i>just</i> enough compression. 
+          </p>
+        </article>
+
+        <article>
+          <p class="mechanism-number">02</p>
+          <h3>Spindex</h3>
+          <p>
+            Stored the maximum of three artifacts and selected which one would
+            be sent forward to the transfer. Sensors checked the artifact as they 
+            entered to get colour information.
+          </p>
+        </article>
+
+        <article>
+          <p class="mechanism-number">03</p>
+          <h3>Transfer</h3>
+          <p>
+            Carried the selected artifact (purple or green) from the spindex up into the 
+            turret to be scored. A combination of a servo, rack and pinion, and elastic band
+            powered this system. 
+          </p>
+        </article>
+
+        <article>
+          <p class="mechanism-number">04</p>
+          <h3>Turret</h3>
+          <p>
+            Rotated continuously through 360 degrees and launched artifacts
+            into the field goals. An autonomous tracking camera (Limelight 3A) 
+            constantly tracked the goals to ensure turret was aimed correctly. 
+          </p>
+        </article>
+
+        <article>
+          <p class="mechanism-number">05</p>
+          <h3>Kickstand</h3>
+          <p>
+            Angled the robot upward in the parking zone to reduce the bot's footprint 
+            in order to more easily meet the requirements for a full park.
+          </p>
+        </article>
+
+        <article>
+          <p class="mechanism-number">06</p>
+          <h3>Drivetrain</h3>
+          <p>
+            Used Mecanum wheels to provide omnidirectional movement around the
+            field. A parallel plate method was used to enable a fully custom 
+            chassis with protected wheels. 
+          </p>
+        </article>
+      </div>
+    </section>
+-->
+    <section class="case-study-section">
+      <div class="concept-heading">
+        <p class="section-number">09/08/26</p>
+
+        <div>
+          <!--<p class="eyebrow">My primary design work</p>-->
+          <h2>Meeting 1</h2>
+        </div>
+      </div>
+
+      <div class="case-study-grid">
+        <figure>
+          <img
+            src="../assets/images/plant-weight/plant-sketch-1.jpg"
+            alt="very first sketch of trying to decide on a design"
+          >
+          <figcaption>
+            Our very first sketch of our possible bots
+          </figcaption>
+        </figure>
+
+        <div class="case-study-copy">
+          <p>
+            We started off the meeting with an introduction and a team-forming activity.
+            We got to learn about all of the different parts of the club, 
+            and got a basic task list with onboarding tasks.  
+          </p>
+
+          <p>
+            After that, there was an icebreaker activity to try to get to 
+            know people and find some team members to work with. We ran around 
+            talking to people and asking around to fill out a little sheet. 
+          </p>
+
+          <p>
+            Once that was done, we got to actually form a team and decide what
+            type of robot we wanted to make. Our group decided to make a drum-style robot,
+            because it we would be able to make it work upside down and try something
+            brand new as a part of it. 
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-study-section">
+      <div class="concept-heading">
+        <p class="section-number">04</p>
+
+        <div>
+          <p class="eyebrow">Mobility and scoring</p>
+          <h2>Custom chassis and rotating turret</h2>
+        </div>
+      </div>
+
+      <div class="image-pair">
+        <figure>
+          <img
+            src="../assets/images/ftc-excalibur/robot-cad.png"
+            alt="CAD model showing the robot's custom parallel-plate chassis"
+          >
+          <figcaption>
+            A parallel-plate construction method allowed the chassis geometry
+            to be designed around the mechanisms above it.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="../assets/images/ftc-excalibur/turret-cad.png"
+            alt="CAD model of Excalibur's rotating scoring turret"
+          >
+          <figcaption>
+            The turret rotated through 360 degrees so the robot could aim
+            without first turning the entire drivetrain.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="case-study-copy offset-copy">
+        <p>
+          I designed the drivetrain using a parallel-plate structure rather
+          than a standard rectangular kit chassis. This gave us direct control
+          over the robot’s dimensions and mounting points while retaining the
+          sideways and diagonal movement provided by Mecanum wheels.
+        </p>
+
+        <p>
+          I also assisted with the turret, which received artifacts from the
+          transfer and launched them into the goals. Independent turret
+          rotation separated aiming from driving and gave the team more
+          flexibility in how the robot approached a scoring position.
+        </p>
+      </div>
+    </section>
+
+    <section class="case-study-section">
+      <div class="concept-heading">
+        <p class="section-number">05</p>
+
+        <div>
+          <p class="eyebrow">Team leadership</p>
+          <h2>Coordinating a 15-person build</h2>
+        </div>
+      </div>
+
+      <figure class="wide-figure team-figure">
+        <img
+          src="../assets/images/ftc-excalibur/team-photo.jpg"
+          alt="The 15 members of FTC Team 22972 Excalibur"
+        >
+        <figcaption>
+          FTC Team 22972 Excalibur at states during the DECODE season.
+        </figcaption>
+      </figure>
+
+      <div class="case-study-copy offset-copy">
+        <p>
+          As team captain, I was responsible for more than my own CAD work. I
+          helped keep the mechanical, programming, documentation, and outreach
+          efforts moving toward the same competition deadlines.
+        </p>
+
+        <p>
+          The season built on my previous experience with Excalibur during INTO
+          THE DEEP. That continuity helped me recognize where clearer subsystem
+          ownership, modular construction, and earlier integration testing
+          could improve the team’s process.
+        </p>
+      </div>
+    </section>
+
+    <section class="case-study-section">
+      <div class="concept-heading">
+        <p class="section-number">06</p>
+
+        <div>
+          <p class="eyebrow">Outreach</p>
+          <h2>Using the team to build another</h2>
+        </div>
+      </div>
+
+      <div class="case-study-grid">
+        <figure>
+          <img
+            src="../assets/images/ftc-excalibur/robotics-camp.jpg"
+            alt="Students participating in Excalibur's middle-school robotics camp"
+          >
+          <figcaption>
+            Our middle-school camp introduced students to FTC concepts through
+            demonstrations and hands-on building.
+          </figcaption>
+        </figure>
+
+        <div class="case-study-copy">
+          <p>
+            Excalibur hosted a week-long robotics camp for middle-school
+            students. The camp introduced FTC-style design and programming
+            while raising money to support a new team through Fort Mill 4-H.
+          </p>
+
+          <p>
+            Teaching the material forced us to explain decisions that had
+            become automatic within our own team. It also extended the season’s
+            impact beyond a single robot or competition result.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-study-section results-section">
+      <p class="section-number">07</p>
+
+      <div class="case-study-copy">
+        <h2>Season results</h2>
+
+        <p class="large-copy">
+          Excalibur advanced through the Upstate Qualifier and South Carolina
+          State Championship before competing at the Carolinas Premier Event.
+        </p>
+
+        <div class="results-list">
+          <div>
+            <p class="eyebrow">Upstate Qualifier</p>
+            <h3>Inspire Award</h3>
+          </div>
+
+          <div>
+            <p class="eyebrow">State Championship</p>
+            <h3>Control Award</h3>
+          </div>
+
+          <div>
+            <p class="eyebrow">Postseason</p>
+            <h3>Carolinas Premier Event</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="project-footer-nav" aria-label="Project navigation">
+      <a href="sensor-suite.html">← Modular sensor suites</a>
+      <a href="../index.html#projects">All projects</a>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Designed and built by Ansh Dwivedi.</p>
+    <p>Last updated 2026.</p>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -309,6 +309,12 @@ h3 {
   font-size: 0.92rem;
 }
 
+.project-log{
+  max-width: 960px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .project-row .project-year {
   margin-bottom: 8px;
 }
