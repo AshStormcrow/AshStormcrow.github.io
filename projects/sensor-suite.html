@@ -44,13 +44,13 @@
 
   <main class="project-page">
     <a class="back-link" href="../index.html#projects">
-      ← Back to selected projects
+      ← Back to My Projects
     </a>
 
     <section class="project-hero">
       <p class="eyebrow">Research project · Clemson University SPRI</p>
 
-      <h1>Modular sensor suites for environmental monitoring</h1>
+      <h1>Design of Low-Cost Modular Camera Suites for Wildfire Data Collection</h1>
 
       <p class="project-introduction">
         Three interchangeable camera concepts designed for use aboard
@@ -66,12 +66,12 @@
 
         <div>
           <dt>Focus</dt>
-          <dd>Mechanical design, cameras, and embedded systems</dd>
+          <dd>Mechanical design, cameras, electrical design, and embedded systems</dd>
         </div>
 
         <div>
           <dt>Platforms</dt>
-          <dd>M500 development drones and LEO rovers</dd>
+          <dd>M500 development drones, LEO rovers, and a custom platform</dd>
         </div>
 
         <div>
@@ -84,7 +84,7 @@
     <figure class="project-cover">
       <img
         src="../assets/images/sensor-suite/sensor-suite-cover.jpg"
-        alt="Modular environmental camera systems developed for drone and rover platforms"
+        alt="Modular environmental camera systems developed for drone and rover platforms. Picture of information poster and prototypes."
       >
       <figcaption>
         The project explored several ways to provide wide camera coverage
@@ -108,7 +108,7 @@
           My goal was to develop a lightweight and modular system that could
           move between drones and ground rovers. Rather than committing to one
           mechanism immediately, I developed three approaches with different
-          levels of complexity: a fixed panoramic module, a conventional
+          levels of complexity and three different uses: a fixed panoramic module, a conventional
           gimbal, and an experimental active ball joint.
         </p>
       </div>
@@ -119,8 +119,8 @@
         <p class="section-number">02</p>
 
         <div>
-          <p class="eyebrow">Concept one</p>
-          <h2>Static panoramic module</h2>
+          <p class="eyebrow">Module one</p>
+          <h2>Static panoramic dome module</h2>
         </div>
       </div>
 
@@ -131,20 +131,20 @@
             alt="CAD model of the static panoramic camera enclosure"
           >
           <figcaption>
-            CAD development of the fixed camera enclosure.
+            CAD model of the fixed camera enclosure.
           </figcaption>
         </figure>
 
         <div class="case-study-copy">
           <p>
-            The simplest concept used multiple fixed cameras to provide
-            overlapping fields of view. With no moving components, the design
-            reduced mechanical complexity and created a system that was easier
+            The most simple concept used three fixed cameras to provide
+            perfectly aligned fields of view. With no moving components, the design
+            reduced mechanical complexity and created a system that was easy
             to manufacture, repair, and operate.
           </p>
 
           <p>
-            This approach traded active camera positioning for immediate
+            This approach traded high quality cameras for immediate
             coverage in several directions. It also provided a useful baseline
             for comparing the added value of the moving concepts.
           </p>
@@ -157,7 +157,7 @@
         <p class="section-number">03</p>
 
         <div>
-          <p class="eyebrow">Concept two</p>
+          <p class="eyebrow">Module two</p>
           <h2>Two-axis gimbal</h2>
         </div>
       </div>
@@ -186,16 +186,16 @@
 
       <div class="case-study-copy offset-copy">
         <p>
-          The gimbal used two small servos to aim a single camera. Compared
+          The gimbal used two 9 gram servos to aim a single, higher quality camera. Compared
           with the static module, it required more control hardware but reduced
           the number of cameras needed and allowed an operator to inspect a
-          particular area.
+          particular area on demand.
         </p>
 
         <p>
           Building and testing this version exposed practical issues that were
           less visible in CAD, including cable routing, servo range, power
-          delivery, and keeping the camera stable while the mechanism moved.
+          delivery, and keeping the drone stable while the mechanism moved.
         </p>
       </div>
     </section>
@@ -205,7 +205,7 @@
         <p class="section-number">04</p>
 
         <div>
-          <p class="eyebrow">Concept three</p>
+          <p class="eyebrow">Module three</p>
           <h2>ABENICS active ball joint</h2>
         </div>
       </div>
@@ -227,7 +227,7 @@
             The most ambitious concept adapted the ABENICS spherical-gear
             principle into a camera mount. Four servos actuated a compact ball
             joint, allowing a single camera to point through a much broader
-            range than a conventional two-axis mechanism.
+            3-axis 360&deg; range than a conventional two-axis mechanism.
           </p>
 
           <p>
