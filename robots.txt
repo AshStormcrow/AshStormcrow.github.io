@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dwivedi.studio/sitemap.xml
