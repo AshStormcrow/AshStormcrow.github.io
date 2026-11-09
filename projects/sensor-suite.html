@@ -10,7 +10,7 @@
 
   <meta
     name="description"
-    content="A modular camera and sensor system designed by Ansh Dwivedi for environmental-hazard monitoring using aerial and terrestrial vehicles."
+    content="Three modular camera concepts designed and prototyped by Ansh Dwivedi for wildfire research on UAV and UGV platforms."
   >
 
   <title>Modular Sensor Suites | Ansh Dwivedi</title>
@@ -50,33 +50,34 @@
     <section class="project-hero">
       <p class="eyebrow">Research project · Clemson University SPRI</p>
 
-      <h1>Design of Low-Cost Modular Camera Suites for Wildfire Data Collection</h1>
+      <h1>Modular camera suites for wildfire research</h1>
 
       <p class="project-introduction">
-        Three interchangeable camera concepts designed for use aboard
-        unmanned aerial and terrestrial vehicles during environmental-hazard
-        monitoring and research.
+        I designed and prototyped three camera modules for environmental
+        research, exploring different tradeoffs in panoramic coverage,
+        steerability, and mechanical complexity. A shared, replaceable
+        mounting approach was designed for both a drone and a ground rover.
       </p>
 
       <dl class="project-facts">
         <div>
           <dt>Role</dt>
-          <dd>Research intern and designer</dd>
+          <dd>Research intern; sole designer and prototyper</dd>
         </div>
 
         <div>
-          <dt>Focus</dt>
-          <dd>Mechanical design, cameras, electrical design, and embedded systems</dd>
+          <dt>Concepts</dt>
+          <dd>Three camera modules, from fixed coverage to active aiming</dd>
         </div>
 
         <div>
           <dt>Platforms</dt>
-          <dd>M500 development drones, LEO rovers, and a custom platform</dd>
+          <dd>ModalAI VOXL m500 drone and LEO Rover</dd>
         </div>
 
         <div>
-          <dt>Tools</dt>
-          <dd>CAD, 3D printing, Raspberry Pi, and bench testing</dd>
+          <dt>Prototyping</dt>
+          <dd>CAD, 3D printing, Raspberry Pi, cameras, and bench testing</dd>
         </div>
       </dl>
     </section>
@@ -84,7 +85,7 @@
     <figure class="project-cover">
       <img
         src="../assets/images/sensor-suite/sensor-suite-cover.jpg"
-        alt="Modular environmental camera systems developed for drone and rover platforms. Picture of information poster and prototypes."
+        alt="Project poster and prototypes of modular environmental camera systems for drone and rover platforms"
       >
       <figcaption>
         The project explored several ways to provide wide camera coverage
@@ -96,20 +97,20 @@
       <p class="section-number">01</p>
 
       <div class="case-study-copy">
-        <h2>The problem</h2>
+        <h2>The design challenge</h2>
 
         <p class="large-copy">
-          Environmental researchers need broad visual coverage, but existing
-          integrated camera platforms can be expensive and difficult to adapt
-          across different vehicles.
+          How could a research team adapt camera coverage to different missions
+          and vehicles without relying on one expensive integrated platform?
         </p>
 
         <p>
-          My goal was to develop a lightweight and modular system that could
-          move between drones and ground rovers. Rather than committing to one
-          mechanism immediately, I developed three approaches with different
-          levels of complexity and three different uses: a fixed panoramic module, a conventional
-          gimbal, and an experimental active ball joint.
+          My mentor helped me shape the initial idea; I carried out the design
+          and prototyping. I explored three approaches rather than settling on
+          one mechanism up front: a fixed multi-camera dome, a conventional
+          two-axis gimbal, and an experimental active ball joint. Each offered
+          a different balance of coverage, moving parts, and control
+          complexity.
         </p>
       </div>
     </section>
@@ -120,7 +121,7 @@
 
         <div>
           <p class="eyebrow">Module one</p>
-          <h2>Static panoramic dome module</h2>
+          <h2>Fixed panoramic dome</h2>
         </div>
       </div>
 
@@ -137,16 +138,17 @@
 
         <div class="case-study-copy">
           <p>
-            The most simple concept used three fixed cameras to provide
-            perfectly aligned fields of view. With no moving components, the design
-            reduced mechanical complexity and created a system that was easy
-            to manufacture, repair, and operate.
+            This module used three fixed Caddx Ratel Pro cameras to capture
+            multiple directions at once. With no moving components, it
+            avoided aiming servos and provided a straightforward baseline for
+            comparing the moving concepts.
           </p>
 
           <p>
-            This approach traded high quality cameras for immediate
-            coverage in several directions. It also provided a useful baseline
-            for comparing the added value of the moving concepts.
+            The tradeoff was a multi-camera system instead of one steerable
+            view. The dome was physically prototyped and bench-tested, so I
+            could evaluate the assembled camera system before considering
+            vehicle integration.
           </p>
         </div>
       </div>
@@ -158,7 +160,7 @@
 
         <div>
           <p class="eyebrow">Module two</p>
-          <h2>Two-axis gimbal</h2>
+          <h2>Two-axis camera gimbal</h2>
         </div>
       </div>
 
@@ -169,7 +171,7 @@
             alt="CAD model of the two-axis camera gimbal"
           >
           <figcaption>
-            The gimbal was designed around a compact IMX219 camera.
+            CAD layout for the IMX219 camera and two-axis mechanism.
           </figcaption>
         </figure>
 
@@ -186,16 +188,17 @@
 
       <div class="case-study-copy offset-copy">
         <p>
-          The gimbal used two 9 gram servos to aim a single, higher quality camera. Compared
-          with the static module, it required more control hardware but reduced
-          the number of cameras needed and allowed an operator to inspect a
-          particular area on demand.
+          The gimbal used a Raspberry Pi IMX219 camera and two 9-gram
+          servos. Unlike the fixed dome, it could aim one camera toward a
+          chosen area, at the cost of adding moving parts and control
+          hardware.
         </p>
 
         <p>
-          Building and testing this version exposed practical issues that were
-          less visible in CAD, including cable routing, servo range, power
-          delivery, and keeping the drone stable while the mechanism moved.
+          Bench tests covered image capture, video transmission and
+          transmission quality, and vibration. Testing also revealed
+          significant heat, an integration concern to resolve before
+          deploying the module on a vehicle.
         </p>
       </div>
     </section>
@@ -206,7 +209,7 @@
 
         <div>
           <p class="eyebrow">Module three</p>
-          <h2>ABENICS active ball joint</h2>
+          <h2>ABENICS active ball-joint concept</h2>
         </div>
       </div>
 
@@ -217,54 +220,95 @@
             alt="CAD model of the experimental ABENICS active ball-joint camera mechanism"
           >
           <figcaption>
-            An experimental four-servo spherical mechanism intended to provide
-            three rotational degrees of freedom.
+            Physical demonstration unit for the experimental four-servo
+            spherical mechanism.
           </figcaption>
         </figure>
 
         <div class="case-study-copy">
           <p>
-            The most ambitious concept adapted the ABENICS spherical-gear
-            principle into a camera mount. Four servos actuated a compact ball
-            joint, allowing a single camera to point through a much broader
-            3-axis 360&deg; range than a conventional two-axis mechanism.
+            The most mechanically ambitious concept adapted the ABENICS
+            spherical-gear principle into a camera mount. Four servos actuated
+            the compact joint to explore three rotational degrees of freedom
+            and a broader aiming range than the conventional gimbal.
           </p>
 
           <p>
-            This design offered the greatest theoretical coverage, but it also
-            introduced tighter tolerances, more difficult fabrication, and a
-            substantially more complicated control problem. It served as the
-            project’s experimental option rather than the simplest deployable
-            solution.
+            I built a physical demonstration unit to explore the mechanism.
+            Compared with the other concepts, it demanded tighter tolerances,
+            more difficult fabrication, and a more involved control approach;
+            it remained an experiment rather than a deployment-ready module.
           </p>
         </div>
       </div>
     </section>
 
+    <section class="case-study-section">
+      <div class="concept-heading">
+        <p class="section-number">05</p>
+
+        <div>
+          <p class="eyebrow">Shared mounting approach</p>
+          <h2>Designed to move between vehicles</h2>
+        </div>
+      </div>
+
+      <div class="case-study-copy offset-copy">
+        <p class="large-copy">
+          The camera modules were designed to be removable, with a different
+          vehicle mount for each platform.
+        </p>
+
+        <p>
+          For the ModalAI VOXL m500 development drone, a custom mount attached
+          beneath the aircraft. A module could rotate into place and snap
+          secure, then be removed the same way to swap in another concept.
+        </p>
+
+        <p>
+          For the LEO Rover, a similar snap-on interface sat on a stand
+          mounted to existing holes on top of the vehicle. This kept the
+          camera module concept consistent while adapting its support
+          structure to each platform.
+        </p>
+      </div>
+    </section>
+
     <section class="case-study-section results-section">
-      <p class="section-number">05</p>
+      <p class="section-number">06</p>
 
       <div class="case-study-copy">
-        <h2>Results and tradeoffs</h2>
+        <h2>Bench results and cost tradeoffs</h2>
 
         <p class="large-copy">
-          The work reduced the estimated cost of wide-area visual coverage
-          from roughly $15,000 for a commercial integrated platform to about
-          $300 across the three prototype approaches.
+          The three prototype modules together cost about $300, including
+          cameras, Raspberry Pis, transmitters, and batteries.
         </p>
 
         <p>
-          The static and gimbal systems were bench-tested successfully. The
-          lower cost came with clear compromises, particularly lower image
-          resolution and shorter transmission distance than the commercial
-          reference system.
+          For context, the project compared that estimate with the roughly
+          $15,000 DJI Matrice 30T platform available to the research team.
+          This is a cost reference, not a like-for-like comparison: the
+          prototypes are camera modules, not a replacement aircraft and
+          integrated sensing platform.
         </p>
 
         <p>
-          More importantly, the project showed that one universal camera mount
-          was not necessarily the best answer. A modular interface allowed the
-          vehicle and research team to choose the appropriate balance of
-          coverage, complexity, weight, and cost for each mission.
+          I bench-tested the fixed dome and gimbal for image capture, video
+          transmission and quality, and vibration; those tests also surfaced
+          heat as an issue. The ABENICS concept reached a physical
+          demonstration stage. The project record does not document flight
+          or rover trials, so the results establish prototype feasibility
+          rather than field performance.
+        </p>
+
+        <p>
+          The concepts showed that camera coverage is a mission tradeoff:
+          multiple fixed cameras offered simultaneous views, the gimbal
+          offered directed aiming, and the active ball joint explored a
+          broader but more complex range of motion. A removable interface
+          could let a research team choose a module to suit the vehicle and
+          task.
         </p>
       </div>
     </section>

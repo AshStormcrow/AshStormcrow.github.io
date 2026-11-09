@@ -53,10 +53,10 @@
       <h1>An invertible robot built around a drum weapon</h1>
 
       <p class="project-introduction">
-        Our three-person team built and entered a compact combat robot in
-        Railside Robotics' first onboarding competition. I helped design the
-        chassis, drum, and front forks, developing the concept from sketches
-        into a CAD assembly and physical prototype.
+        Our three-person team designed and competed a Plastic Ant Weight
+        robot through Railside Robotics. I helped develop the chassis, drum,
+        and front forks from early sketches into a refined CAD assembly and
+        physical prototype.
       </p>
 
       <dl class="project-facts">
@@ -66,18 +66,18 @@
         </div>
 
         <div>
-          <dt>Team</dt>
-          <dd>It Passed Inspection · 3 members</dd>
+          <dt>Class</dt>
+          <dd>PlAnt (Plastic Ant Weight), up to 1 lb</dd>
         </div>
 
         <div>
-          <dt>Program</dt>
-          <dd>Railside Robotics onboarding competition</dd>
+          <dt>Build</dt>
+          <dd>About 4.5 × 5.2 in; PLA body and weapon, foam wheels</dd>
         </div>
 
         <div>
-          <dt>Stage</dt>
-          <dd>Entered two competitions; drum redesign delayed</dd>
+          <dt>Weapon</dt>
+          <dd>2822 1800KV motor; estimated peak tip speed around 250 mph</dd>
         </div>
       </dl>
     </section>
@@ -107,6 +107,14 @@
           three-person team. Wheel placement let the robot drive upside down,
           while the drum weapon gave the design its central mechanical
           challenge.
+        </p>
+
+        <p>
+          The PlAnt class caps the robot at one pound and requires its
+          structural and weapon parts to be plastic. We used PLA for those
+          printed components, with foam wheels coated in liquid latex.
+          Two drive motors controlled the wheels through a single gimbal on
+          our RadioMaster Pocket transmitter.
         </p>
       </div>
     </section>
@@ -194,6 +202,12 @@
             the frame. Checking that it could rotate in the model gave us an
             early integration check before moving to the physical build.
           </p>
+
+          <p>
+            In later CAD iterations, we refined the chassis shape and fit,
+            made room for the electronics, and reduced the footprint while
+            building up the printed walls.
+          </p>
         </div>
       </div>
 
@@ -203,17 +217,16 @@
           alt="Updated CAD assembly of the combat robot with its drum, chassis, wheels, and front forks"
         >
         <figcaption>
-          An updated CAD view brings the chassis, weapon, wheels, and front
-          forks together in a more complete assembly.
+          The refined assembly brings the chassis, drum, wheels, electronics
+          space, and front forks together.
         </figcaption>
       </figure>
 
       <div class="case-study-copy offset-copy">
         <p>
-          This later model shows how the major parts came together around the
-          drum. Reviewing the assembly as a whole helped us see the
-          relationship between the weapon, chassis, drive components, and
-          forks before working with the physical robot.
+          For the drum, we used a 2822 1800KV motor. A club calculator
+          estimated a peak tip speed of about 250 mph, a speed the weapon
+          could reasonably reach in a match.
         </p>
       </div>
     </section>
@@ -269,12 +282,20 @@
       </div>
 
       <figure class="wide-figure match-video">
-        <video controls preload="metadata" playsinline aria-label="Plant Weight competing in a match">
+        <video
+          controls
+          preload="metadata"
+          playsinline
+          poster="../assets/images/plant-weight/plant-example.jpeg"
+          aria-label="Plant Weight competing in a match"
+        >
           <source src="../assets/images/plant-weight/match-video.mp4" type="video/mp4">
           Your browser does not support HTML video.
         </video>
         <figcaption>
-          Match footage shows the robot competing in the arena.
+          Second match of our first onboarding competition: after taking
+          several hits, a head-on strike split the drum and exposed the
+          weapon's weak point.
         </figcaption>
       </figure>
     </section>
@@ -283,7 +304,7 @@
       <p class="section-number">05</p>
 
       <div class="case-study-copy">
-        <h2>Results and next iteration</h2>
+        <h2>Competition results and the next iteration</h2>
 
         <p class="large-copy">
           The first competition showed that the chassis could take repeated
@@ -298,6 +319,14 @@
           chassis and plates held up again, but another direct hit split the
           drum. Across both competitions, the chassis proved durable while the
           weapon remained the limiting component.
+        </p>
+
+        <p>
+          Our working explanation was that too few outer walls and weak infill
+          let the drum fracture. The planned reprint would increase the wall
+          count to 15 and reduce infill from 15% to below 10%, with a different
+          pattern such as honeycomb. Since that revision was not printed in
+          time, we did not get to test whether it would solve the problem.
         </p>
       </div>
     </section>
